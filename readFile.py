@@ -15,6 +15,7 @@ def stockProduct():
 
 #This function is for creating customer invoice
 def sellProduct():
+    #This takes input from user
     customerName = input("Enter customer name: ")
     productName = []
     productQuantity = []
@@ -43,8 +44,9 @@ def sellProduct():
             with open("products.txt","r") as file:
                 detail =  file.readlines()
 
+            print("Invoice No.: CINV" + datetime.now().strftime("%y%m%d"))
             print("Customer's name: "+customerName)
-            print("Date and Time: "+str(datetime.now().strftime("%Y-%m-%d, %H:%M:%S")))
+            print("Date and Time: "+ datetime.now().strftime("%Y-%m-%d, %H:%M:%S"))
             print(f"{'Product':25}{'Brand':20}{'Quantity':15}{'Rate(Rs)':15}{'Price':15}")
             print("-"*90)
             price = []
@@ -65,6 +67,7 @@ def sellProduct():
 
             #Writing customer invoice for selling product
             with open("customerInvoice.txt","w") as invoice:
+                invoice.write("Invoice No.: CINV" + datetime.now().strftime("%y%m%d\n"))
                 invoice.write("Customer's Name: "+customerName)
                 invoice.write("\nDate and Time: "+str(datetime.now().strftime("%Y-%m-%d, %H:%M:%S")))
                 invoice.write("\n")
@@ -98,6 +101,7 @@ def sellProduct():
 
 #This function is for creating supplier invoice
 def restockProduct():
+    #This take input from user
     supplierName = input("Enter supplier name: ")
     productName = []
     productQuantity = []
@@ -119,6 +123,7 @@ def restockProduct():
             with open("products.txt","r") as file:
                 detail =  file.readlines()
 
+            print("Invoice No.: SINV"+datetime.now().strftime("%y%m%d"))
             print("supplier's name: "+supplierName)
             print("Date and Time: "+str(datetime.now().strftime("%Y-%m-%d, %H:%M:%S")))
             print(f"{'Product':25}{'Brand':20}{'Quantity':15}{'Previous rate(Rs)':25}{'New rate(Rs)':25}{'Price':15}")
@@ -139,6 +144,7 @@ def restockProduct():
 
             #Writing supplier invoice for selling product
             with open("supplierInvoice.txt","w") as invoice:
+                invoice.write("Invoice No.: SINV"+datetime.now().strftime("%y%m%d\n"))
                 invoice.write("supplier's Name: "+supplierName)
                 invoice.write("\nDate and Time: "+str(datetime.now().strftime("%Y-%m-%d, %H:%M:%S")))
                 invoice.write("\n")
