@@ -1,0 +1,11 @@
+Invoice No.: CINV250418
+Customer's Name: JOna
+Date and Time: 2025-04-18, 12:39:26
+
+Product                  Brand               Quantity       Rate(Rs)       Price          
+------------------------------------------------------------------------------------------
+ Sunscreen                Aqualogica          66             750            37500          
+
+ Light Moisturizer        Unilever            13             185            1850           
+------------------------------------------------------------------------------------------
+ Total                                                                      39350

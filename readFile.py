@@ -22,7 +22,7 @@ def sellProduct():
     totalQuantity =[]
     free = 0
     price = []
-
+    a=0
     i = 0
     while i>=0:
         productName.append(input("Enter product name: "))
@@ -33,6 +33,42 @@ def sellProduct():
 
         else:
             totalQuantity.append(productQuantity[i])
+
+        with open("products.txt","r") as file:
+            detail = file.readlines()
+        for line in detail:
+            product,brand,quantity,rate,country = line.strip().split(", ")
+            quantity = int(quantity)
+            # for j in range(len(productQuantity)):
+            if product == productName[i]:
+                if quantity<totalQuantity[i]:
+                    print("Insufficient Quantity!!!!")
+                    insufficientQuantity = input("Do you want to buy this in lower quantity (Yes/No): ")
+                
+                    if insufficientQuantity.lower() == "yes":
+                        productQuantity[i] = int(input("Enter New Quantity: "))
+                        if productQuantity[i]>=3:
+                            free = int(productQuantity[i]/3)
+                            totalQuantity[i] = productQuantity[i] + free
+
+                        else:
+                            totalQuantity[i] = productQuantity[i]
+                    
+                    else:
+                        a = 1
+                        break
+                        
+        if a==1:
+            exit = input("Do you want to buy other product (Yes/No): ")
+            if exit == "yes":
+                del(productName[i])
+                del(productQuantity[i])
+                del(totalQuantity[i])
+                continue
+
+            else:
+                break
+
     
         anotherProduct = input("Do you want to buy another product (Yes/No): ")
         if anotherProduct.lower()=="yes":
