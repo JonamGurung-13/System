@@ -1,13 +1,12 @@
-Vitamin C Serum, Garnier, 500, 900, France
-Skin Cleanser, Cetaphil, 400, 280, Switzerland
-Sunscreen, Aqualogica, 534, 750, India
-cetaphil Moisturizing Lotion, Cetaphil, 100, 1200, USA
-Light Moisturizer, Unilever, 37, 185, USA
+Vitamin C Serum, Garnier, 500, 600.0, France
+Skin Cleanser, Cetaphil, 300, 280, Switzerland
+Sunscreen, Aqualogica, 400, 750.0, India
+Light Moisturizer, Unilever, 210, 500.0, USA
 Light Day Cream, Procter & Gamble, 300, 355, South Africe
-Glycerine, Skinlite, 490, 230, Nepal
-Vitamin C Ampoule, SY Cosmetics, 100, 500, South Korea
-Hydrating Day Cream, Antipodes, 300, 3500, New Zealand
-Gentle Facial Cleanser, Sukin, 200, 1800, Australia
-Softening Cleansing Foam, Shiseido, 150, 5200, Japan
-Rose Floral Water, Melvita, 200, 3000, France
-Soothing Cleansing Milk, Dr. Hauschka, 145, 3800, Germany
+Glycerine, Skinlite, 437, 230, Nepal
+Vitamin C Ampoule, SY Cosmetics, 400, 400.0, South Korea
+Hydrating Day Cream, Antipodes, 285, 3500, New Zealand
+Gentle Facial Cleanser, Sukin, 174, 1800, Australia
+Softening Cleansing Foam, Shiseido, 76, 5200, Japan
+Rose Floral Water, Melvita, 194, 3000, France
+Soothing Cleansing Milk, Dr. Hauschka, 310, 3800, Germany
